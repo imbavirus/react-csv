@@ -49,7 +49,7 @@ export const getHeaderValue = (property, obj) => {
 
 export const elementOrEmpty = (element) => element || element === 0 ? element : '';
 
-export const joiner = ((data, separator = ',', enclosingCharacter = '"') => {
+export const joiner = ((data, separator = ',', enclosingCharacter = '') => {
   return data
     .filter(e => e)
     .map(
